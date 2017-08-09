@@ -50,7 +50,7 @@ a:focus, a:active, a:visited {
   margin: 0px;
   margin-bottom: 1.4rem;
   font-weight: 300;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 4.8rem;
 }
 
@@ -220,9 +220,7 @@ a:focus, a:active, a:visited {
   color: white;
   text-decoration: none;
 }
-.portfolio-block img:hover {
-  /*src: url(https://nikolaykotenko.github.io/portfolio/portfolio_one/);/*/
-}
+
 /*Медиа запросы*/
 @media (min-width: 0px) and (max-width: 767px) {
   html {
@@ -612,7 +610,8 @@ Animations
 
 .grid figure figcaption {
 	padding: 2em;
-	color: #fff;
+	color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
