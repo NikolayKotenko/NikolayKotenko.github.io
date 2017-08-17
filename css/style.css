@@ -141,8 +141,9 @@ a:focus, a:active, a:visited {
 .portfolio a:hover {
   text-decoration: none; /*Подчеркивабщая линия при наведении у ссылок, убрали
   СТАНДАРТНАЯ ССЫЛКА СКАЧЕТ, МЫ вместо неё запилили свое подчеркивание border-bottom */
-  border-bottom: 1px dotted #333;
+  /*border-bottom: 1px dotted #333;*/
 }
+
 /*Footer */
 .footer {
   background-color: #646464;
@@ -282,15 +283,20 @@ a:focus, a:active, a:visited {
     }
   .portfolio .effect-layla {
     min-width: 320px;
-    padding-right: 20px;
+  }
+  .portfolio .col-md-4 {
+    margin-right: 20px;
   }
 }
 
   @media (min-width: 1200px) {
   .portfolio .effect-layla {
     min-width: 360px;
-    padding-right: 20px;
   }
+  .portfolio .col-md-4 {
+    margin-right: 20px;
+  }
+
 }
 /*Прямоугольник паралаксовый должен прозрачным быть иначе тупо черный фон и в самом низу чтобы
 другие css свойства не перекрывали его */
@@ -336,7 +342,7 @@ background: transparent;
 .grid figure figcaption {
 	padding: 2em;
 	color: white;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.4);
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -374,8 +380,13 @@ background: transparent;
 
 .grid figure p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	font-size: 90%;
+  font-weight: normal;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
+  margin-top: 8%;
 }
+
 
 /* Individual effects */
 
@@ -393,7 +404,7 @@ figure.effect-layla img {
 }
 
 figure.effect-layla figcaption {
-	padding: 3em;
+	/*padding: 3em;*/
 }
 
 figure.effect-layla figcaption::before,
@@ -430,7 +441,8 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 26%;
+	padding-top: 15%;
+  /*padding-right: 8%;*/
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -458,7 +470,7 @@ figure.effect-layla p {
 }
 
 figure.effect-layla:hover img {
-	opacity: 0.7;
+	opacity: 0.3;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
